@@ -1,18 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginStart="@dimen/Margin_For_View"
+    android:layout_marginEnd="@dimen/Margin_For_View"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/First_quarter"
+        android:textColor="@color/Color_For_TextView"
+        android:textSize="@dimen/Text_size"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/Margin_For_View"
+        android:typeface="normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/Color_For_TextView"/>
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:background="@drawable/linner_background"
+        android:layout_marginTop="@dimen/Margin_For_View">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_Month_textview"
+            android:textColor="@color/Month_Text_Color"
+            android:padding="@dimen/Padding_For_Text_View"
+            android:textSize="@dimen/Text_size"
+            android:text="@string/JAN"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:contentDescription="@string/JAN"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jan"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:background="@drawable/linner_background"
+        android:layout_marginTop="@dimen/Margin_For_View">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_Month_textview"
+            android:textColor="@color/Month_Text_Color"
+            android:padding="@dimen/Padding_For_Text_View"
+            android:textSize="@dimen/Text_size"
+            android:text="@string/FEB"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:contentDescription="@string/FEB"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feb"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:background="@drawable/linner_background"
+        android:layout_marginTop="@dimen/Margin_For_View">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_Month_textview"
+            android:textColor="@color/Month_Text_Color"
+            android:padding="@dimen/Padding_For_Text_View"
+            android:textSize="@dimen/Text_size"
+            android:text="@string/MAR"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/MAR"
+            android:src="@drawable/mar"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/Second_quarter"
+        android:textColor="@color/Color_For_TextView"
+        android:textSize="@dimen/Text_size"
+        android:textStyle="bold"
+        android:typeface="normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/Color_For_TextView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:background="@drawable/linner_background"
+        android:layout_marginTop="@dimen/Margin_For_View">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_Month_textview"
+            android:textColor="@color/Month_Text_Color"
+            android:padding="@dimen/Padding_For_Text_View"
+            android:textSize="@dimen/Text_size"
+            android:text="@string/APR"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:contentDescription="@string/APR"
+            android:scaleType="centerCrop"
+            android:src="@drawable/apr"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:background="@drawable/linner_background"
+        android:layout_marginTop="@dimen/Margin_For_View">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_Month_textview"
+            android:textColor="@color/Month_Text_Color"
+            android:padding="@dimen/Padding_For_Text_View"
+            android:textSize="@dimen/Text_size"
+            android:text="@string/MAY"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:contentDescription="@string/MAY"
+            android:scaleType="centerCrop"
+            android:src="@drawable/may"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

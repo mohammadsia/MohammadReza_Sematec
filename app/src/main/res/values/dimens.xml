@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Margin_For_View">16dp</dimen>
+    <dimen name="Text_size">16sp</dimen>
+    <dimen name="Padding_For_Text_View">25dp</dimen>
+
+</resources>
