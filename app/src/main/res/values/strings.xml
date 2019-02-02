@@ -2,7 +2,6 @@
     <string name="app_name">MohammadReza_Sematec</string>
 
 
-
     <string name="First_quarter">First quarter</string>
     <string name="Second_quarter">Second quarter</string>
 
@@ -11,5 +10,22 @@
     <string name="MAR">MAR</string>
     <string name="APR">APR</string>
     <string name="MAY">MAY</string>
+
+
+   <!-- 03-->
+
+
+    <string name="please_enter_your_profile">Please Insert Your Information!!!</string>
+    <string name="phonenumber">PhoneNumber</string>
+    <string name="email">Email</string>
+    <string name="Age">Age</string>
+    <string name="lastname">LastName</string>
+    <string name="firstname">FirstName</string>
+    <string name="login">Login</string>
+    <string name="please_check_and_verify">Please Check And Verify!</string>
+    <string name="verify">Verify</string>
+
+    <!-- 03-->
+
 
 </resources>
