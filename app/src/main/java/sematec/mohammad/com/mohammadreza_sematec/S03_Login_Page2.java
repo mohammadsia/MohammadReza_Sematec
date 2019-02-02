@@ -56,11 +56,11 @@ public class S03_Login_Page2 extends AppCompatActivity implements View.OnClickLi
 
 
 
-        txt_FirstName   .   setText (FirstName);
-        txt_LastName    .   setText (LastName);
-        txt_Age         .   setText (Age );
-        txt_Email       .   setText (Email);
-        txt_Phone       .   setText (Phone);
+        txt_FirstName   .   setText ("FirstName : " + FirstName);
+        txt_LastName    .   setText ("LastName : " +LastName);
+        txt_Age         .   setText ("Age : " +Age );
+        txt_Email       .   setText ("Email : " +Email);
+        txt_Phone       .   setText ("Phone : " +Phone);
     }
 
 
