@@ -12,7 +12,7 @@
     <string name="MAY">MAY</string>
 
 
-   <!-- 03-->
+    <!-- 03-->
 
 
     <string name="please_enter_your_profile">Please Insert Your Information!!!</string>
@@ -24,6 +24,7 @@
     <string name="login">Login</string>
     <string name="please_check_and_verify">Please Check And Verify!</string>
     <string name="verify">Verify</string>
+    <string name="back">Back</string>
 
     <!-- 03-->
 
