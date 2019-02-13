@@ -85,8 +85,6 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
         txt_Email.setText("Email : " + Email);
         txt_Phone.setText("Phone : " + Phone);
 
-        object=new S05_Object(FirstName,LastName);
-        Hawk.put("object",object);
 
         add=findViewById(R.id.Add);
     }
@@ -110,6 +108,9 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
                 Hawk.put(TAG_AGE_SHARED, Age);
                 Hawk.put(TAG_PHONE_SHARED, Phone);
                 Hawk.put(TAG_EMAIL_SHARED, Email);
+                Hawk.put("firstname",FirstName);
+                Hawk.put("lastname",LastName);
+
             } catch (Exception execution) {
                 execution.printStackTrace();
             }

@@ -1,10 +1,12 @@
 package sematec.mohammad.com.mohammadreza_sematec.Adapters;
 
+import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -35,7 +37,7 @@ public class S05_Recycler_Adapter extends RecyclerView.Adapter<S05_Recycler_Adap
 
 
         holder.text_name.setText(objects.get(i).getName() + "/"+ objects.get(i).getLastName() );
-
+        //holder.imageView.setImageResource(R.drawable.contact_icon);
     }
 
     @Override
@@ -51,9 +53,10 @@ public class S05_Recycler_Adapter extends RecyclerView.Adapter<S05_Recycler_Adap
 
 
         TextView text_name;
+        ImageView imageView;
         public S05_Recycler_ViewHolder(@NonNull View itemView) {
             super(itemView);
-
+        //    imageView =itemView.findViewById(R.id.Contact_Image);
             text_name =itemView.findViewById(R.id.Contact_Name);
         }
     }

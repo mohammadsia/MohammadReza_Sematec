@@ -25,7 +25,7 @@ public class S05_RecyclerView_Activity extends AppCompatActivity implements View
     private Button Add;
     Intent intent;
     S05_Recycler_Adapter adapter;
-    List<S05_Object> list;
+    List<S05_Object> list = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,16 +44,20 @@ public class S05_RecyclerView_Activity extends AppCompatActivity implements View
         Add.setOnClickListener(this);
 
 
-        S05_Object object;
+        S05_Object object = new S05_Object();
 
-        object=Hawk.get("object");
+        String firstname=Hawk.get("firstname");
+        String lastname=Hawk.get("lastname");
 
+        object.setName(firstname);
+        object.setLastName(lastname);
          list.add(object);
 
 
         recycler = findViewById(R.id.recycler);
         adapter   = new S05_Recycler_Adapter(list);
         recycler.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
         recycler.setLayoutManager(new LinearLayoutManager(Application.getContext(), RecyclerView.VERTICAL, false));
 
     }
