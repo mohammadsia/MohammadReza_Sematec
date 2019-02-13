@@ -9,10 +9,12 @@ import android.widget.TextView;
 
 import com.orhanobut.hawk.Hawk;
 
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import sematec.mohammad.com.mohammadreza_sematec.Application.App;
 import sematec.mohammad.com.mohammadreza_sematec.Application.Application;
+import sematec.mohammad.com.mohammadreza_sematec.Objects.S05_Object;
 import sematec.mohammad.com.mohammadreza_sematec.R;
 
 public class S04_StartActivityForResult2 extends AppCompatActivity implements View.OnClickListener {
@@ -20,24 +22,29 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
 
     TextView txt_FirstName, txt_LastName, txt_Age, txt_Email, txt_Phone;
 
-    public final String Tag_FirstName = "FirstName";
-    public final String Tag_LastName = "LastName";
-    public final String Tag_Age = "Age";
-    public final String Tag_Email = "Email";
-    public final String Tag_Phone = "Phone";
+    public final String Tag_FirstName    = "FirstName";
+    public final String Tag_LastName     = "LastName";
+    public final String Tag_Age          = "Age";
+    public final String Tag_Email        = "Email";
+    public final String Tag_Phone        = "Phone";
+
+
 
 
     public static final String TAG_FIRSTNAME_SHARED = "FirstName";
-    public static final String TAG_LASTNAME_SHARED = "LastName";
-    public static final String TAG_AGE_SHARED = "AGE";
-    public static final String TAG_EMAIL_SHARED = "Email";
-    public static final String TAG_PHONE_SHARED = "Phone";
+    public static final String TAG_LASTNAME_SHARED  = "LastName";
+    public static final String TAG_AGE_SHARED       = "AGE";
+    public static final String TAG_EMAIL_SHARED     = "Email";
+    public static final String TAG_PHONE_SHARED     = "Phone";
 
     String FirstName, LastName, Age, Email, Phone;
 
     Button btn_Verify, btn_Back;
 
     Intent intent;
+
+    List<S05_Object> list;
+    S05_Object object;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,13 +58,15 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
 
 
     private void init() {
-         intent = getIntent();
+        intent = getIntent();
+
+
 
         FirstName = intent.getStringExtra(Tag_FirstName);
-        LastName =  intent.getStringExtra(Tag_LastName);
-        Age =       intent.getStringExtra(Tag_Age);
-        Email =     intent.getStringExtra(Tag_Email);
-        Phone =     intent.getStringExtra(Tag_Phone);
+        LastName = intent.getStringExtra(Tag_LastName);
+        Age = intent.getStringExtra(Tag_Age);
+        Email = intent.getStringExtra(Tag_Email);
+        Phone = intent.getStringExtra(Tag_Phone);
 
 
         txt_FirstName = findViewById(R.id.txt_FirstName);
@@ -75,6 +84,9 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
         txt_Age.setText("Age : " + Age);
         txt_Email.setText("Email : " + Email);
         txt_Phone.setText("Phone : " + Phone);
+
+        object=new S05_Object(FirstName,LastName);
+        Hawk.put("object",object);
     }
 
 
@@ -104,7 +116,7 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
         }
 
 
-        if (v.getId()==btn_Back.getId()){
+        if (v.getId() == btn_Back.getId()) {
 
             setResult(RESULT_OK, intent);
             finish();

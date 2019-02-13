@@ -103,7 +103,7 @@ public class S04_StartActivityForResult extends AppCompatActivity implements Vie
 
             case R.id.Login:
                 try {
-                    if (FirstName.length() > 3 && LastName.length() > 5 && Age.length() >= 1 && Email.length() > 8 && Phone.length() > 10) {
+                    if (FirstName.length() > 3 && LastName.length() > 3 && Age.length() >= 1 && Email.length() > 8 && Phone.length() > 9) {
 
                         intent.putExtra("FirstName", FirstName);
                         intent.putExtra("LastName", LastName);

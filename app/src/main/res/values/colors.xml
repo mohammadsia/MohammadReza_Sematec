@@ -8,4 +8,7 @@
     <color name="Month_Text_Color">#ffffff</color>
     <color name="BackGround_For_Relative_s03">#dcdcdc</color>
     <color name="Background_03_P02">#373956</color>
+    <color name="S05_TextView_Color">#00ffff</color>
+    <color name="S05_TextView_Dark_Background">#dc000528</color>
+    <color name="S05_Text_View_Storke">#dc23ff00</color>
 </resources>

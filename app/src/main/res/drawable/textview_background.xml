@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" android:padding="5dp" >
 
-</selector>
+    <solid android:color="@color/S05_TextView_Dark_Background"/>
+    <corners android:radius="2dp"/>
+    <stroke android:color="@color/S05_Text_View_Storke"
+        android:width="1dp"/>
+
+
+
+
+</shape>
