@@ -19,7 +19,7 @@ public class S04_StartActivityForResult extends AppCompatActivity implements Vie
 
     EditText ext_FirstName,ext_LastName,ext_Phone,ext_Mail,ext_Age;
 
-    Button   btn_Login;
+   public Button   btn_Login,btn_add;
 
     String   FirstName ,LastName   ,Age   ,Phone   ,Email;
 
@@ -50,13 +50,13 @@ public class S04_StartActivityForResult extends AppCompatActivity implements Vie
         ext_Phone       =   findViewById(R.id.Phone);
 
         btn_Login       =   findViewById(R.id.Login);
+        btn_add         =   findViewById(R.id.UserList);
 
 
         Hawk.init(Application.getContext()).build();
 
 
         intent          =   new Intent( this   ,S04_StartActivityForResult2.class  );
-
 
 
         Hawk_init();
@@ -93,6 +93,8 @@ public class S04_StartActivityForResult extends AppCompatActivity implements Vie
         ext_Age.addTextChangedListener(this);
         ext_Mail.addTextChangedListener(this);
         ext_Phone.addTextChangedListener(this);
+        btn_add.setOnClickListener(this);
+
     }
 
 
@@ -119,6 +121,11 @@ public class S04_StartActivityForResult extends AppCompatActivity implements Vie
                 }
 
                 break;
+
+
+            case R.id.UserList:
+
+                startActivity(new Intent(S04_StartActivityForResult.this,S05_RecyclerView_Activity.class));
         }
 
     }

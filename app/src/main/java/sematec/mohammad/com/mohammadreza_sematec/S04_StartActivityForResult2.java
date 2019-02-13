@@ -39,7 +39,7 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
 
     String FirstName, LastName, Age, Email, Phone;
 
-    Button btn_Verify, btn_Back;
+    Button btn_Verify, btn_Back,add;
 
     Intent intent;
 
@@ -87,6 +87,8 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
 
         object=new S05_Object(FirstName,LastName);
         Hawk.put("object",object);
+
+        add=findViewById(R.id.Add);
     }
 
 

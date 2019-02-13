@@ -13,15 +13,15 @@
         <activity android:name=".S02_Linner" />
         <activity android:name=".S03_Login_Page1" />
         <activity android:name=".S03_Login_Page2" />
-        <activity android:name=".S04_StartActivityForResult"/>
-        <activity android:name=".S04_StartActivityForResult2" />
-        <activity android:name=".S05_RecyclerView_Activity" >
+        <activity android:name=".S04_StartActivityForResult">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".S04_StartActivityForResult2" />
+        <activity android:name=".S05_RecyclerView_Activity" />
     </application>
 
 </manifest>

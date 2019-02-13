@@ -25,6 +25,7 @@ public class S05_RecyclerView_Activity extends AppCompatActivity implements View
     private Button Add;
     Intent intent;
     S05_Recycler_Adapter adapter;
+    List<S05_Object> list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,11 +39,18 @@ public class S05_RecyclerView_Activity extends AppCompatActivity implements View
 
         Hawk.init(Application.getContext()).build();
 
-        List<S05_Object> list=new ArrayList<>();
+
         Add = findViewById(R.id.Add);
         Add.setOnClickListener(this);
 
-         list = Hawk.get("object");
+
+        S05_Object object;
+
+        object=Hawk.get("object");
+
+         list.add(object);
+
+
         recycler = findViewById(R.id.recycler);
         adapter   = new S05_Recycler_Adapter(list);
         recycler.setAdapter(adapter);
