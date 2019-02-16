@@ -36,7 +36,7 @@ public class S05_Recycler_Adapter extends RecyclerView.Adapter<S05_Recycler_Adap
     public void onBindViewHolder(@NonNull S05_Recycler_ViewHolder holder, int i) {
 
 
-        holder.text_name.setText(objects.get(i).getName() + "/"+ objects.get(i).getLastName() );
+        holder.text_name.setText(objects.get(i).getFirstName() + "/"+ objects.get(i).getLastName() );
         //holder.imageView.setImageResource(R.drawable.contact_icon);
     }
 

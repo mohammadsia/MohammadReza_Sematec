@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sematec.mohammad.com.mohammadreza_sematec">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:name=".Application.Application"
         android:allowBackup="true"
@@ -10,18 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".S02_Linner" />
-        <activity android:name=".S03_Login_Page1" />
-        <activity android:name=".S03_Login_Page2" />
-        <activity android:name=".S04_StartActivityForResult">
+
+        <activity android:name=".S06_Prayer_Activity"/>
+        <activity android:name=".S06_Navigation_Drawer_Activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".S02_Linner" />
+        <activity android:name=".S03_Login_Page1" />
+        <activity android:name=".S03_Login_Page2" />
+        <activity android:name=".S04_StartActivityForResult"/>
         <activity android:name=".S04_StartActivityForResult2" />
         <activity android:name=".S05_RecyclerView_Activity" />
+
+
+
     </application>
 
 </manifest>

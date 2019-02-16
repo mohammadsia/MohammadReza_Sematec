@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".S06_Prayer_Activity"
+    android:background="@drawable/textview_background">
+
+
+    <LinearLayout
+        android:id="@+id/lnr_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="right">
+
+
+        <!--Fajr	"05:18"-->
+        <!--Sunrise	"06:51"-->
+        <!--Dhuhr	"12:18"-->
+        <!--Asr	"15:21"-->
+        <!--Sunset	"17:47"-->
+        <!--Maghrib	"17:47"-->
+        <!--Isha	"19:17"-->
+        <!--Imsak	"05:08"-->
+        <!--Midnight-->
+        <!---->
+
+
+    <TextView
+        android:id="@+id/txt_Fajr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_background"
+        android:textColor="@color/S05_TextView_Color"
+        android:layout_marginTop="@dimen/margin_8dp"/>
+
+        <TextView
+            android:id="@+id/txt_Sunrise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_Dhuhr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_Asr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_Sunset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_Maghrib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_Isha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_Imsak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_Midnight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/textview_background"
+            android:textColor="@color/S05_TextView_Color"
+            android:layout_marginTop="@dimen/margin_8dp"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_Submit"
+        android:textColor="@color/S05_TextView_Color"
+        android:background="@drawable/textview_background"
+        android:layout_margin="@dimen/margin_16dp"
+        android:padding="@dimen/margin_8dp"
+        android:hint="@string/enter_your_city_name"
+        android:textColorHint="@color/BackGround_For_Relative_s03"
+        />
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/S05_TextView_Color"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/textview_background"
+        android:layout_margin="@dimen/margin_16dp"
+        android:text="@string/submit"/>
+
+</RelativeLayout>

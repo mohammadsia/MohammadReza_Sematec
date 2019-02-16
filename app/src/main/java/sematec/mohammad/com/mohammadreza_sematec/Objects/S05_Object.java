@@ -20,11 +20,11 @@ public class S05_Object {
         LastName=lastName;
     }
 
-    public void setName(String name){
+    public void setFirstName(String name){
         FirstName=name;
     }
 
-    public String getName(){
+    public String getFirstName(){
         return FirstName;
     }
 

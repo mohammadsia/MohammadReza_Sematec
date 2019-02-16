@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".S06_Navigation_Drawer_Activity"
+    android:id="@+id/drawerLayout">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_Month_textview">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/navigationdrawer"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textColor="@color/Navigation"/>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/leftDrawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#e1e2dc"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="1dp" />
+
+
+</android.support.v4.widget.DrawerLayout>

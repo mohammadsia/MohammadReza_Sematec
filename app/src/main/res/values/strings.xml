@@ -27,6 +27,9 @@
     <string name="back">Back</string>
     <string name="add_new_user">Add_New_User</string>
     <string name="userlist">UserList</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_city_name">Enter Your City Name</string>
+    <string name="navigationdrawer">NavigationDrawer...</string>
 
     <!-- 03-->
 

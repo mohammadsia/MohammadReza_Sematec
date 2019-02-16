@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.orhanobut.hawk.Hawk;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -108,8 +109,12 @@ public class S04_StartActivityForResult2 extends AppCompatActivity implements Vi
                 Hawk.put(TAG_AGE_SHARED, Age);
                 Hawk.put(TAG_PHONE_SHARED, Phone);
                 Hawk.put(TAG_EMAIL_SHARED, Email);
-                Hawk.put("firstname",FirstName);
-                Hawk.put("lastname",LastName);
+                List<String> firstname=new ArrayList<>();
+                List<String> lastname=new ArrayList<>();
+                firstname.add(FirstName);
+                lastname.add(FirstName);
+                Hawk.put("firstname",firstname);
+                Hawk.put("lastname",lastname);
 
             } catch (Exception execution) {
                 execution.printStackTrace();

@@ -45,20 +45,28 @@ public class S05_RecyclerView_Activity extends AppCompatActivity implements View
 
 
         S05_Object object = new S05_Object();
+        List<String> firstname=new ArrayList<>();
+        List<String> lastname = new ArrayList<>();
 
-        String firstname=Hawk.get("firstname");
-        String lastname=Hawk.get("lastname");
-
-        object.setName(firstname);
-        object.setLastName(lastname);
-         list.add(object);
-
+        firstname=Hawk.get("firstname");
+        lastname=Hawk.get("lastname");
 
         recycler = findViewById(R.id.recycler);
         adapter   = new S05_Recycler_Adapter(list);
         recycler.setAdapter(adapter);
         adapter.notifyDataSetChanged();
         recycler.setLayoutManager(new LinearLayoutManager(Application.getContext(), RecyclerView.VERTICAL, false));
+
+        for (int i=0;i<firstname.size();i++){
+
+            object.setFirstName(firstname.get(i));
+            object.setLastName(lastname.get(i));
+            list.add(object);
+
+        }
+
+
+
 
     }
 

@@ -6,6 +6,7 @@
     <color name="Color_For_TextView">#dc1894</color>
     <color name="color_Month_textview">#3d4eb7</color>
     <color name="Month_Text_Color">#ffffff</color>
+    <color name="Navigation">#80FFFFFF</color>
     <color name="BackGround_For_Relative_s03">#dcdcdc</color>
     <color name="Background_03_P02">#373956</color>
     <color name="S05_TextView_Color">#00ffff</color>
