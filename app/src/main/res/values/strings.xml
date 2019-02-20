@@ -30,6 +30,12 @@
     <string name="submit">Submit</string>
     <string name="enter_your_city_name">Enter Your City Name</string>
     <string name="navigationdrawer">NavigationDrawer...</string>
+    <string name="goto_alertdialog_activity">Activity With Alert Dialog</string>
+    <string name="menu">Menu</string>
+    <string name="get_permission">Get Permission</string>
+    <string name="Gson_Activity">Gson_Activity</string>
+    <string name="getdata">getData</string>
+    <string name="please_type_your_city_name">Please Type Your City Name</string>
 
     <!-- 03-->
 

@@ -7,6 +7,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.JsonObject;
+
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -47,9 +50,10 @@ public class Api_Services {
 
 
 
-            JSONObject prayer =response.getJSONObject("timings");
 
+            JSONObject data=response.getJSONObject("data");
 
+            JSONObject prayer =data.getJSONObject("timings");
 
             prayer_objcet.setFajr(prayer.getString("Fajr"));
 

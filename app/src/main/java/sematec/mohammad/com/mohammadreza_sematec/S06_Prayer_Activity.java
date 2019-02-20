@@ -44,6 +44,7 @@ public class S06_Prayer_Activity extends AppCompatActivity implements Api_Servic
         txt_Asr = findViewById(R.id.txt_Asr);
 
 
+        txt_Fajr.setText("Fajr : ");
 
         edt_City = findViewById(R.id.edt_City);
 
@@ -56,6 +57,7 @@ public class S06_Prayer_Activity extends AppCompatActivity implements Api_Servic
     public void onRecieved(Prayer_Objcet prayer_objcet) {
         if (prayer_objcet!=null){
 
+            txt_Fajr.setText("Fajr : "+ prayer_objcet.getFajr());
             txt_Fajr.setText("Fajr : "+ prayer_objcet.getFajr());
             txt_Asr.setText("Fajr : "+ prayer_objcet.getFajr());
             txt_Dhuhr.setText("Dhuhr : "+ prayer_objcet.getDhuhr());
@@ -79,7 +81,7 @@ public class S06_Prayer_Activity extends AppCompatActivity implements Api_Servic
 
     @Override
     public void onClick(View v) {
-        api_services.getCurrentPrayer(S06_Prayer_Activity.this, edt_City.getText().toString().toLowerCase().trim());
+        api_services.getCurrentPrayer(S06_Prayer_Activity.this, "gorgan");
 
     }
 }

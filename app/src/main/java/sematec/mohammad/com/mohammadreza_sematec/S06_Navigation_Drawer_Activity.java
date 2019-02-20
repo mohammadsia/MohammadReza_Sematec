@@ -9,12 +9,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
-
 import java.util.Objects;
 
 import sematec.mohammad.com.mohammadreza_sematec.Adapters.CustomDrawerAdapter;
-import sematec.mohammad.com.mohammadreza_sematec.Application.Application;
 import sematec.mohammad.com.mohammadreza_sematec.Objects.DrawerItem;
 
 public class S06_Navigation_Drawer_Activity extends AppCompatActivity {

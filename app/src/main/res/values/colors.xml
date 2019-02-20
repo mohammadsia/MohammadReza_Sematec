@@ -12,4 +12,5 @@
     <color name="S05_TextView_Color">#00ffff</color>
     <color name="S05_TextView_Dark_Background">#dc000528</color>
     <color name="S05_Text_View_Storke">#dc23ff00</color>
+    <color name="S08_menu_text">#94C2BCBC</color>
 </resources>
