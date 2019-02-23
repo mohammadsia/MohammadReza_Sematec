@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".S08_Gson_Activity"
+    android:background="@color/colorPrimaryDark">
+
+
+    <TextView
+        android:id="@+id/txt_City_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textview_background"
+        android:padding="@dimen/margin_8dp"
+        android:textColor="@color/S05_TextView_Color"
+        android:textSize="30sp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Pray"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Pray"
+        app:layout_constraintStart_toStartOf="@+id/txt_Pray"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Pray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textview_background"
+        android:padding="@dimen/margin_8dp"
+        android:textColor="@color/S05_TextView_Color"
+        app:layout_constraintBottom_toTopOf="@+id/edt_City"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+
+    <EditText
+        android:id="@+id/edit_City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_background"
+        android:layout_marginBottom="8dp"
+        android:padding="@dimen/margin_8dp"
+        android:textColor="@color/S05_TextView_Color"
+        android:layout_margin="@dimen/margin_16dp"
+        android:hint="@string/please_type_your_city_name"
+        android:textColorHint="@color/S08_menu_text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Pray" />
+
+    <Button
+        android:id="@+id/btn_Pray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/getdata"
+        android:background="@drawable/textview_background"
+        android:textColor="@color/S05_TextView_Color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
